@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+
+* {
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  font-size: 18px;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 0;
+  width: 100%;
+  height: 69px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: black;
+  z-index: 1;
+}
+
+.logo {
+  color: #fff;
+  float: left;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.navigation {
+  height: 100%;
+}
+
+nav {
+  float: right;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  padding: 0;
+  position: relative;
+  left: 20%;
+}
+
+nav li {
+  display: inline;
+  padding: 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+main {
+  margin-top: 69px;
+  background-color: #f1f1f1;
+}
+
+.banner {
+  width: 100%;
+  height: 350px;
+  background-image: url("../images/banner-background-oil-rig.jpg");
+  background-size: cover;
+}
+
+.written-by {
+  background-color: #fff;
+  position: relative;
+  top: 45%;
+  left: 1%;
+  width: 20%;
+  height: 50%;
+  box-shadow: -2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+.written-by h3 {
+  margin-top: 0;
+  margin-left: 5px;
+  margin-bottom: 2px;
+  font-size: 16px;
+}
+
+.written-by h5 {
+  margin-top: 0;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.written-by img {
+  width: 100px;
+  padding: 10px 10px 3px 10px;
+}
+
+.primary-content {
+  display: flex;
+}
+
+.left-side {
+  width: 55%;
+  margin: 20px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.article-heading {
+  margin: 10px 0;
+}
+
+.article-heading h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.article-heading h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+article {
+  border-bottom: 2px solid #f1f1f1;
+}
+
+article p {
+  font-weight: lighter;
+}
+
+.new-comment-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-comment-box label {
+  margin: 10px 0;
+}
+
+.new-comment-box textarea {
+  width: auto;
+  height: 60px;
+}
+
+.new-comment button {
+  float: right;
+  margin-left: 100%;
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 5px;
+  width: 80px;
+  color: #fff;
+  background-color: #007bff;
+  border: transparent;
+  border-radius: 5px;
+}
+
+.new-comment button:active {
+  background-color: #004b9b;
+}
+
+.existing-comments {
+  margin-top: 40px;
+}
+
+.comment {
+  background-color: #f1f1f1;
+  min-height: 130px;
+  margin: 10px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.comment-content {
+  max-width: 100%;
+  word-break: break-all;
+}
+
+aside {
+  background-color: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  width: 30%;
+  margin: 20px 20px 20px 40px;
+}
+
+.article-container {
+  display: flex;
+  border-bottom: 2px solid #f1f1f1;
+  padding: 20px 0;
+  max-height: 77px;
+}
+
+.article-container img {
+  width: 100px;
+  margin-left: 10px;
+}
+
+.article-container h2 {
+  font-size: 18px;
+  margin: 10px;
+}
+
+.article-content p {
+  margin: 10px;
+}
+
+.article-content a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 14px;
+}
+
+footer {
+  width: 100%;
+  height: 57.5px;
+}
+
+.copyright {
+  position: relative;
+  float: left;
+  color: #fff;
+  top: 30%;
+  left: 2%;
+}
+
+.footer-nav-links {
+  float: right;
+  margin-right: 30px;
+}
+
+.footer-nav-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer-nav-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media only screen and (max-width: 400px) {
+  nav {
+    display: none;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .left-side {
+    width: 100%;
+  }
+
+  .logo h1 {
+    font-size: 24px;
+  }
+
+  .written-by {
+    width: 50%;
+  }
+
+  .copyright {
+    position: relative;
+    top: 70%;
+  }
+
+  .footer-nav-links {
+    width: 25%;
+  }
+
+  .footer-nav-links ul {
+    padding: 0;
+  }
+}
